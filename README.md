@@ -25,7 +25,7 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
 
 ## 🚀 Instalação Manual (Alternativa)
 
-### 🪟 No Windows
+### 🪟 Windows
 1. Instale o [Python 3.12](https://www.python.org/downloads/windows/).
 2. Baixe o [FFmpeg](https://ffmpeg.org/download.html) e adicione-o ao seu PATH do sistema (ou use o Chocolatey: `choco install ffmpeg`).
 3. Abra o terminal e rode:
@@ -36,7 +36,7 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
    python server.py
    ```
 
-### 🐧 No Linux (Ubuntu/Debian)
+### 🐧 Linux (Ubuntu/Debian)
 1. Instale as dependências do sistema:
    ```bash
    sudo apt update
@@ -50,7 +50,7 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
    python server.py
    ```
 
-### 🍎 No MacOS
+### 🍎 MacOS
 1. Recomendamos usar o [Homebrew](https://brew.sh/):
    ```bash
    brew install python@3.12 ffmpeg
