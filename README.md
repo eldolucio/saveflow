@@ -11,16 +11,57 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
 - **Privacidade total:** O processamento acontece no servidor, sem redirecionamentos externos.
 - **Compatível com Chrome:** Downloads registrados no histórico oficial do navegador.
 
-## 🐳 Como rodar com Docker (O mais fácil)
+## 🐳 Como rodar com Docker (Windows / Linux / Mac)
+**Este é o método mais fácil.** Você não precisa instalar Python nem FFmpeg manualmente.
 
-Se você tem o Docker instalado, não precisa configurar nada de Python ou FFmpeg. Basta rodar:
+1. Instale o [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+2. Na pasta do projeto, rode:
+   ```bash
+   docker-compose up --build
+   ```
+3. Acesse: `http://localhost:5001`
 
-```bash
-docker-compose up --build
-```
-Isso vai montar o servidor e abrir em `http://localhost:5001`.
+---
 
-## 🚀 Como instalar (Manualmente no Mac)
+## 🚀 Instalação Manual (Alternativa)
+
+### 🪟 No Windows
+1. Instale o [Python 3.12](https://www.python.org/downloads/windows/).
+2. Baixe o [FFmpeg](https://ffmpeg.org/download.html) e adicione-o ao seu PATH do sistema (ou use o Chocolatey: `choco install ffmpeg`).
+3. Abra o terminal e rode:
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\activate
+   pip install flask yt-dlp curl_cffi flask-cors
+   python server.py
+   ```
+
+### 🐧 No Linux (Ubuntu/Debian)
+1. Instale as dependências do sistema:
+   ```bash
+   sudo apt update
+   sudo apt install python3.12 python3.12-venv ffmpeg -y
+   ```
+2. Prepare o ambiente:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install flask yt-dlp curl_cffi flask-cors
+   python server.py
+   ```
+
+### 🍎 No MacOS
+1. Recomendamos usar o [Homebrew](https://brew.sh/):
+   ```bash
+   brew install python@3.12 ffmpeg
+   ```
+2. Prepare o ambiente:
+   ```bash
+   python3.12 -m venv venv
+   source venv/bin/activate
+   pip install flask yt-dlp curl_cffi flask-cors
+   python server.py
+   ```
 
 ## ☁️ Deploy na Nuvem
 O projeto já inclui um **Dockerfile** configurado. Basta conectar este repositório ao **Railway.app** ou **Render.com**. O sistema cuidará da instalação do Python e do FFmpeg automaticamente.
