@@ -11,24 +11,16 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
 - **Privacidade total:** O processamento acontece no servidor, sem redirecionamentos externos.
 - **Compatível com Chrome:** Downloads registrados no histórico oficial do navegador.
 
-## 🚀 Como instalar (Localmente)
+## 🐳 Como rodar com Docker (O mais fácil)
 
-1. Você precisa ter o **Python 3.12** instalado.
-2. Clone o repositório e entre na pasta.
-3. Crie um ambiente virtual:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-4. Instale as dependências:
-   ```bash
-   pip install flask yt-dlp curl_cffi flask-cors
-   ```
-5. Rode o servidor:
-   ```bash
-   python server.py
-   ```
-6. Acesse: `http://localhost:5001`
+Se você tem o Docker instalado, não precisa configurar nada de Python ou FFmpeg. Basta rodar:
+
+```bash
+docker-compose up --build
+```
+Isso vai montar o servidor e abrir em `http://localhost:5001`.
+
+## 🚀 Como instalar (Manualmente no Mac)
 
 ## ☁️ Deploy na Nuvem
 O projeto já inclui um **Dockerfile** configurado. Basta conectar este repositório ao **Railway.app** ou **Render.com**. O sistema cuidará da instalação do Python e do FFmpeg automaticamente.
