@@ -1,5 +1,9 @@
 # 🌊 SaveFlow — Download Direto
 
+> [!CAUTION]
+> ### 🛑 AVISO IMPORTANTE SOBRE DIREITOS AUTORAIS
+> Esta ferramenta foi desenvolvida estritamente para **uso pessoal e educacional**. O download de conteúdos protegidos por direitos autorais sem a permissão do proprietário é ilegal e viola os termos de serviço das plataformas (YouTube, Instagram, TikTok). O desenvolvedor não se responsabiliza pelo uso indevido desta ferramenta. **Respeite os criadores de conteúdo.**
+
 SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios do **YouTube, Instagram e TikTok** sem anúncios e com foco em privacidade.
 
 ![SaveFlow Screenshot](screenshot.png)
