@@ -10,14 +10,14 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
 
 ![SaveFlow Screenshot](screenshot.png)
 
-## 📥 Downloads (Versão 1.0.2)
+## 📥 Downloads (Versão 1.0.3)
 Escolha o seu sistema operacional e baixe o instalador pronto:
 
 | Sistema | Link de Download |
 | :--- | :--- |
-| **🪟 Windows** | [**Baixar SaveFlow para Windows (.exe)**](https://github.com/eldolucio/saveflow/releases/download/v1.0.2/SaveFlow-Setup.exe) |
-| **🍎 MacOS** | [**Baixar SaveFlow para Mac**](https://github.com/eldolucio/saveflow/releases/download/v1.0.2/SaveFlow-Mac) |
-| **🐧 Linux** | [**Baixar SaveFlow para Linux (.AppImage)**](https://github.com/eldolucio/saveflow/releases/download/v1.0.2/SaveFlow-Linux) |
+| **🪟 Windows** | [**Baixar SaveFlow para Windows (.exe)**](https://github.com/eldolucio/saveflow/releases/download/v1.0.3/SaveFlow-Setup.exe) |
+| **🍎 MacOS** | [**Baixar SaveFlow para Mac**](https://github.com/eldolucio/saveflow/releases/download/v1.0.3/SaveFlow-Mac) |
+| **🐧 Linux** | [**Baixar SaveFlow para Linux (.AppImage)**](https://github.com/eldolucio/saveflow/releases/download/v1.0.3/SaveFlow-Linux) |
 
 > [!TIP]
 > **Dica para Windows:** Ao abrir o `.exe`, o Windows pode mostrar uma mensagem de "SmartScreen". Clique em **"Mais informações"** e depois em **"Executar assim mesmo"** para abrir o app pela primeira vez.
