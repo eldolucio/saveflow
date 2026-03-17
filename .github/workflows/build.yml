@@ -44,7 +44,15 @@ jobs:
       if: matrix.os == 'ubuntu-latest'
       run: |
         pyinstaller --noconsole --onefile --add-data "static:static" main_app.py
-        mv dist/main_app dist/SaveFlow-Linux
+        mv dist/main_app dist/saveflow
+        # Instala ferramentas para empacotamento .deb e .rpm
+        sudo apt-get update
+        sudo apt-get install -y ruby-full build-essential rpm
+        sudo gem install --no-document fpm
+        # Cria o pacote .deb
+        fpm -s dir -t deb -n saveflow -v 1.0.4 --prefix /usr/bin dist/saveflow
+        # Cria o pacote .rpm
+        fpm -s dir -t rpm -n saveflow -v 1.0.4 --prefix /usr/bin dist/saveflow
 
     - name: Release Packages
       uses: softprops/action-gh-release@v2
@@ -53,6 +61,7 @@ jobs:
         files: |
           dist/SaveFlow-Setup.exe
           dist/SaveFlow-Mac
-          dist/SaveFlow-Linux
+          saveflow_1.0.4_amd64.deb
+          saveflow-1.0.4-1.x86_64.rpm
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
