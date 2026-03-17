@@ -10,6 +10,20 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
 
 ![SaveFlow Screenshot](screenshot.png)
 
+## 📥 Downloads (Versão 1.0.0)
+Escolha o seu sistema operacional e baixe o instalador pronto:
+
+| Sistema | Link de Download |
+| :--- | :--- |
+| **🪟 Windows** | [**Baixar SaveFlow para Windows (.exe)**](https://github.com/eldolucio/saveflow/releases/download/v1.0.0/SaveFlow-Setup.exe) |
+| **🍎 MacOS** | [**Baixar SaveFlow para Mac**](https://github.com/eldolucio/saveflow/releases/download/v1.0.0/SaveFlow-Mac) |
+| **🐧 Linux** | [**Baixar SaveFlow para Linux (.AppImage)**](https://github.com/eldolucio/saveflow/releases/download/v1.0.0/SaveFlow-Linux) |
+
+> [!TIP]
+> **Dica para Windows:** Ao abrir o `.exe`, o Windows pode mostrar uma mensagem de "SmartScreen". Clique em **"Mais informações"** e depois em **"Executar assim mesmo"** para abrir o app pela primeira vez.
+
+---
+
 ## ✨ Funcionalidades
 - **TikTok sem Marcas d'Água:** Suporte completo para links do TikTok com bypass de bloqueios recentes.
 - **YouTube & Instagram:** Download nos melhores formatos disponíveis (MP4 e MP3).
