@@ -29,7 +29,7 @@ jobs:
     - name: Build with PyInstaller (Windows)
       if: matrix.os == 'windows-latest'
       run: |
-        pyinstaller --noconsole --onefile --add-data "static;static" main_app.py
+        pyinstaller --noconsole --onefile --add-data "static;static" --version-file file_version_info.txt main_app.py
         rename dist\main_app.exe SaveFlow-Setup.exe
 
     - name: Build with PyInstaller (MacOS)

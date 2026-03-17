@@ -1,0 +1,33 @@
+
+# UTF-8
+#
+# For more details about fixed file info 'form' see:
+# http://msdn.microsoft.com/en-us/library/ms646997.aspx
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 0, 0, 0),
+    prodvers=(1, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+    ),
+  kids=[
+    StringFileInfo(
+      [
+      StringTable(
+        '040904B0',
+        [StringProperty('CompanyName', 'SaveFlow'),
+        StringProperty('FileDescription', 'SaveFlow Media Downloader'),
+        StringProperty('FileVersion', '1.0.0'),
+        StringProperty('InternalName', 'SaveFlow'),
+        StringProperty('LegalCopyright', '© 2026 eldolucio. Todos os direitos reservados.'),
+        StringProperty('OriginalFilename', 'SaveFlow-Setup.exe'),
+        StringProperty('ProductName', 'SaveFlow'),
+        StringProperty('ProductVersion', '1.0.0')])
+      ]), 
+    VarFileInfo([VarTuple('Translation', [1033, 1200])])
+  ]
+)
