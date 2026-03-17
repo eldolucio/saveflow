@@ -1,0 +1,56 @@
+name: Build Installers
+
+on:
+  push:
+    tags:
+      - 'v*' # Dispara quando você cria uma tag (ex: v1.0.0)
+  workflow_dispatch: # Permite rodar manualmente no painel do GitHub
+
+jobs:
+  build:
+    name: Build on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install Dependencies
+      run: |
+        pip install flask yt-dlp curl_cffi flask-cors pywebview pyinstaller
+
+    - name: Build with PyInstaller (Windows)
+      if: matrix.os == 'windows-latest'
+      run: |
+        pyinstaller --noconsole --onefile --add-data "static;static" main_app.py
+        rename dist\main_app.exe SaveFlow-Setup.exe
+
+    - name: Build with PyInstaller (MacOS)
+      if: matrix.os == 'macos-latest'
+      run: |
+        pyinstaller --noconsole --onefile --add-data "static:static" main_app.py
+        mv dist/main_app dist/SaveFlow-Mac
+
+    - name: Build with PyInstaller (Linux)
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        pyinstaller --noconsole --onefile --add-data "static:static" main_app.py
+        mv dist/main_app dist/SaveFlow-Linux
+
+    - name: Release Packages
+      uses: softprops/action-gh-release@v2
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: |
+          dist/SaveFlow-Setup.exe
+          dist/SaveFlow-Mac
+          dist/SaveFlow-Linux
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
