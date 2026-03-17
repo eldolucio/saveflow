@@ -29,6 +29,21 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
 
 ---
 
+## 🖥️ Transformar em Aplicativo Desktop (.exe / .app)
+Se você quer transformar o SaveFlow em um programa instalável que abre em uma janela própria (sem navegador):
+
+1. Instale o PyInstaller:
+   ```bash
+   pip install pyinstaller pywebview
+   ```
+2. Gere o executável:
+   * **Windows:** `pyinstaller --noconsole --onefile --add-data "static;static" main_app.py`
+   * **MacOS:** `pyinstaller --noconsole --onefile --add-data "static:static" main_app.py`
+   * **Linux:** `pyinstaller --noconsole --onefile --add-data "static:static" main_app.py`
+3. O arquivo final estará na pasta `dist/`.
+
+---
+
 ## 🚀 Instalação Manual (Alternativa)
 
 ### 🪟 Windows
