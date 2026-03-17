@@ -68,3 +68,5 @@ O projeto já inclui um **Dockerfile** configurado. Basta conectar este reposit�
 
 ---
 *Desenvolvido para uso pessoal e simplificação de acesso a mídias.*
+
+© 2026 eldolucio. Todos os direitos reservados.
