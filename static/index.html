@@ -263,9 +263,20 @@ function monitorar() {
         clearInterval(poll);
         hide('prog-card');
         $('fn').innerText = j.filename;
-        $('salvar').onclick = (e) => {
+        $('salvar').onclick = async (e) => {
            e.preventDefault();
-           toast('Preparando transferência...');
+           
+           // Se estiver rodando no aplicativo Desktop (pywebview)
+           if (window.pywebview && window.pywebview.api) {
+             toast('Abrindo selecionador de pasta...');
+             const res = await window.pywebview.api.save_file(jobId, j.filename);
+             if (res.success) toast('Salvo com sucesso!');
+             if (res.error) toast('Erro: ' + res.error);
+             return;
+           }
+
+           // Se estiver no Navegador comum
+           toast('Iniciando transferência...');
            const a = document.createElement('a');
            a.href = API+`/api/file/${jobId}`;
            a.download = j.filename;
