@@ -4,31 +4,34 @@
 > # ⚠️ AVISO SOBRE DIREITOS AUTORAIS
 > **Esta ferramenta foi desenvolvida apenas para fins educacionais e de uso pessoal.**
 > 
-> O download de vídeos protegidos por direitos autorais sem a permissão expressa do proprietário é uma violação legal e descumpre os Termos de Serviço de plataformas como YouTube, Instagram e TikTok. O desenvolvedador **NÃO SE RESPONSABILIZA** por quaisquer danos ou violações de leis decorrentes do uso desta ferramenta. **Respeite sempre o trabalho dos criadores de conteúdo e as leis de propriedade intelectual.**
+> O download de vídeos protegidos por direitos autorais sem a permissão expressa do proprietário é uma violação legal e descumpre os Termos de Serviço de plataformas como YouTube, Instagram e TikTok. O desenvolvedor **NÃO SE RESPONSABILIZA** por quaisquer danos ou violações de leis decorrentes do uso desta ferramenta. **Respeite sempre o trabalho dos criadores de conteúdo e as leis de propriedade intelectual.**
 
 SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios do **YouTube, Instagram e TikTok** sem anúncios e com foco em privacidade.
 
 ![SaveFlow Screenshot](screenshot.png)
 
-## 📥 Downloads (Versão 1.0.6)
+## 📥 Downloads (Versão 1.0.7)
 
 ### 🪟 Windows
 | Arquivo | Link de Download |
 | :--- | :--- |
-| **Instalador (.exe)** | [**Baixar SaveFlow para Windows**](https://github.com/eldolucio/saveflow/releases/download/v1.0.6/SaveFlow-Setup.exe) |
+| **Instalador (.exe)** | [**Baixar SaveFlow para Windows**](https://github.com/eldolucio/saveflow/releases/download/v1.0.7/SaveFlow-Setup.exe) |
 
 ### 🍎 MacOS (Instalação Arrastar e Soltar)
 | Arquivo | Link de Download |
 | :--- | :--- |
-| **Imagem de Disco (.dmg)** | [**Baixar SaveFlow para Mac**](https://github.com/eldolucio/saveflow/releases/download/v1.0.6/SaveFlow-Mac.dmg) |
+| **Imagem de Disco (.dmg)** | [**Baixar SaveFlow para Mac**](https://github.com/eldolucio/saveflow/releases/download/v1.0.7/SaveFlow-Mac.dmg) |
 
 > **Como instalar no Mac:** Abra o arquivo `.dmg` e arraste o ícone do **SaveFlow** para a pasta **Applications (Aplicações)**.
 
 ### 🐧 Linux (Debian & Fedora)
 | Sistema | Link de Download |
 | :--- | :--- |
-| **Debian/Ubuntu (.deb)** | [**Baixar para Debian/Ubuntu**](https://github.com/eldolucio/saveflow/releases/download/v1.0.6/saveflow_1.0.6_amd64.deb) |
-| **Fedora/RPM (.rpm)** | [**Baixar para Fedora/CentOS**](https://github.com/eldolucio/saveflow/releases/download/v1.0.6/saveflow-1.0.6-1.x86_64.rpm) |
+| **Debian/Ubuntu (.deb)** | [**Baixar para Debian/Ubuntu**](https://github.com/eldolucio/saveflow/releases/download/v1.0.7/saveflow_1.0.7_amd64.deb) |
+| **Fedora/RPM (.rpm)** | [**Baixar para Fedora/CentOS**](https://github.com/eldolucio/saveflow/releases/download/v1.0.7/saveflow-1.0.7-1.x86_64.rpm) |
+
+> [!TIP]
+> **O download não inicia?** Se o seu navegador bloquear o download (por ser um arquivo .exe ou .dmg novo), clique com o **botão direito** no link e escolha **"Salvar link como..."**.
 
 > [!TIP]
 > **Dica para Windows:** Ao abrir o `.exe`, o Windows pode mostrar uma mensagem de "SmartScreen". Clique em **"Mais informações"** e depois em **"Executar assim mesmo"** para abrir o app pela primeira vez.
