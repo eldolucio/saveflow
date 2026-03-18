@@ -31,8 +31,9 @@ jobs:
     - name: Build with PyInstaller (Windows)
       if: matrix.os == 'windows-latest'
       run: |
-        pyinstaller --noconsole --onefile --add-data "static;static" --version-file file_version_info.txt main_app.py
-        rename dist\main_app.exe SaveFlow-Setup.exe
+        pip install pyinstaller pywebview yt-dlp flask flask-cors curl_cffi
+        pyinstaller --noconsole --onefile --add-data "static;static" main_app.py
+        mv dist/main_app.exe dist/SaveFlow-Setup.exe
 
     - name: Build with PyInstaller (Mac)
       if: matrix.os == 'macos-latest'
@@ -64,9 +65,9 @@ jobs:
         sudo apt-get install -y ruby-full build-essential rpm
         sudo gem install --no-document fpm
         # Cria o pacote .deb
-        fpm -s dir -t deb -n saveflow -v 1.0.5 --prefix /usr/bin dist/saveflow
+        fpm -s dir -t deb -n saveflow -v 1.0.6 --prefix /usr/bin dist/saveflow
         # Cria o pacote .rpm
-        fpm -s dir -t rpm -n saveflow -v 1.0.5 --prefix /usr/bin dist/saveflow
+        fpm -s dir -t rpm -n saveflow -v 1.0.6 --prefix /usr/bin dist/saveflow
 
     - name: Release Packages
       uses: softprops/action-gh-release@v2
@@ -75,7 +76,7 @@ jobs:
         files: |
           dist/SaveFlow-Setup.exe
           dist/SaveFlow-Mac.dmg
-          saveflow_1.0.5_amd64.deb
-          saveflow-1.0.5-1.x86_64.rpm
+          saveflow_1.0.6_amd64.deb
+          saveflow-1.0.6-1.x86_64.rpm
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

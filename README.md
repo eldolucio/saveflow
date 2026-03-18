@@ -10,25 +10,25 @@ SaveFlow é uma ferramenta minimalista e poderosa para baixar vídeos e áudios 
 
 ![SaveFlow Screenshot](screenshot.png)
 
-## 📥 Downloads (Versão 1.0.5)
+## 📥 Downloads (Versão 1.0.6)
 
 ### 🪟 Windows
 | Arquivo | Link de Download |
 | :--- | :--- |
-| **Instalador (.exe)** | [**Baixar SaveFlow para Windows**](https://github.com/eldolucio/saveflow/releases/download/v1.0.5/SaveFlow-Setup.exe) |
+| **Instalador (.exe)** | [**Baixar SaveFlow para Windows**](https://github.com/eldolucio/saveflow/releases/download/v1.0.6/SaveFlow-Setup.exe) |
 
 ### 🍎 MacOS (Instalação Arrastar e Soltar)
 | Arquivo | Link de Download |
 | :--- | :--- |
-| **Imagem de Disco (.dmg)** | [**Baixar SaveFlow para Mac**](https://github.com/eldolucio/saveflow/releases/download/v1.0.5/SaveFlow-Mac.dmg) |
+| **Imagem de Disco (.dmg)** | [**Baixar SaveFlow para Mac**](https://github.com/eldolucio/saveflow/releases/download/v1.0.6/SaveFlow-Mac.dmg) |
 
 > **Como instalar no Mac:** Abra o arquivo `.dmg` e arraste o ícone do **SaveFlow** para a pasta **Applications (Aplicações)**.
 
 ### 🐧 Linux (Debian & Fedora)
 | Sistema | Link de Download |
 | :--- | :--- |
-| **Debian/Ubuntu (.deb)** | [**Baixar para Debian/Ubuntu**](https://github.com/eldolucio/saveflow/releases/download/v1.0.5/saveflow_1.0.5_amd64.deb) |
-| **Fedora/RPM (.rpm)** | [**Baixar para Fedora/CentOS**](https://github.com/eldolucio/saveflow/releases/download/v1.0.5/saveflow-1.0.5-1.x86_64.rpm) |
+| **Debian/Ubuntu (.deb)** | [**Baixar para Debian/Ubuntu**](https://github.com/eldolucio/saveflow/releases/download/v1.0.6/saveflow_1.0.6_amd64.deb) |
+| **Fedora/RPM (.rpm)** | [**Baixar para Fedora/CentOS**](https://github.com/eldolucio/saveflow/releases/download/v1.0.6/saveflow-1.0.6-1.x86_64.rpm) |
 
 > [!TIP]
 > **Dica para Windows:** Ao abrir o `.exe`, o Windows pode mostrar uma mensagem de "SmartScreen". Clique em **"Mais informações"** e depois em **"Executar assim mesmo"** para abrir o app pela primeira vez.
